@@ -1,0 +1,73 @@
+public class enemies {
+
+    private  String name;
+private int RangeMovement;
+private int RangeDamage;
+private int damage;
+private String SpecialAbility;
+
+    private int FrequencySpecialAbility;
+    private int life;
+        int aleatorio = (int) Math.random() * 10;// random para poner en cuantos turnos ataca el enemigo
+       
+    public void setAttackDrones() {
+        if (aleatorio>5){
+            damage=2;
+        }else {
+            damage=3;
+        }
+    }
+public void setAttackSpider(){
+    if (aleatorio>5){
+        damage=4;
+    }else {
+        damage=3;
+    }
+    
+}
+
+    public void setAttackPirates(){
+        if (aleatorio<3){
+            damage=2;
+        }else if (aleatorio<5){// serian 4 tipos de ataques habiendo mas posibilidades para q caiga el ataque de 2 y de 4 de danio
+            damage=3;
+        } else if (aleatorio<8) {
+            damage=4;
+        }else {
+            damage=5;
+        }
+    }
+    public void setAttackGigants(){
+        if (aleatorio<3){
+            damage=5;
+        }else if (aleatorio<7){// serian 3 tipos de ataques habiendo mas posibilidades para q caiga el ataque de 2 y de 6 de danio
+            damage=6;
+     
+        }else {
+            damage=7;
+        } }
+    public enemies(String name, int RangeMovement, int RangeDamage, String SpecialAbility, int life, int FrequencySpecialAbility){
+    this.name=name;
+
+    this.FrequencySpecialAbility=FrequencySpecialAbility;
+    this.SpecialAbility=SpecialAbility;
+    this.RangeDamage=RangeDamage;
+    this.life=life;
+}
+
+    public int getDamage() {
+      return   damage;
+          // vida personaje va a ser igual a la misma vida menos el damage
+    }
+
+    public void setLife(){
+        life=life-5;//damagePersonaje enlazar despues//
+    }
+
+    public String getLife() {
+        return " vida "+life;
+    }
+}
+
+// habilidad especilad del gigante, a todos los persomnajes en un rango de 3 le quita 4 vida;
+
