@@ -1,0 +1,21 @@
+
+public class Main {
+    public static void main(String[] args) {
+
+enemies CombatDrones= new enemies("Combat Drones",4,3," Escaneo",12,3);
+enemies AraniaCosmica=new enemies("Araña Cosmica",3,2,"Red de Energia",18,4);
+enemies PiratasEspaciales= new enemies("Piratas Espaciales",5,4,"robo",20,3);
+enemies GiganteLava=new enemies("Gigante de lava",2,1,"Errupcion",28,4);
+
+
+
+// frecuencia de habilidad especial cuando se haga el juego como tal se pone un contador
+/*
+Habilidad especial( detectar enemigo) Si el personaje esta en una  casilla menor 5 de distancia del personaje ya sea para el eje X o el Y, detectar enemigo y caminar para arriba de el, cuando hagan el mapa veo eso como funciona
+habilidad especial( captura enemigo) si un personaje es en un radio de 3 casillas este no podra moverse hasta q venza a la araña
+ si el personaje esta en un rango de menos q Range damage, atacar  casilla,
+ movimiento, si la casilla esta ocupada moverse hacia otro lado, cuando esta ocupada ponerlo com un boolean si esta ocupuda True
+
+ */
+  }
+    }
